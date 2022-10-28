@@ -1,0 +1,127 @@
+.subscribe {
+	&__row {
+		margin-bottom: 166px;
+		font-family: 'Inter';
+		padding: 0 0 0 9px;
+	}
+	&__image {
+		width: 50.1%;
+		border-radius: 5px;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__body {
+		padding: 31px 81px 0;
+	}
+	&__title {
+		font-family: 'Orbitron';
+		font-size: 39.8px;
+		font-weight: 700;
+		line-height: 50px;
+		margin-bottom: 27px;
+	}
+	&__text {
+		max-width: 500px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 35px;
+		margin-bottom: 52px;
+	}
+	&__form {
+		gap: 9px;
+	}
+	&__input {
+		display: inline-block;
+		width: 274px;
+		padding: 19px 17px;
+		border-radius: 5.5px 0px 0px 5.5px;
+		&::placeholder {
+			font-size: 15px;
+			color: #474A57;
+		}
+		&:focus {
+			box-shadow: 0 0 10px #b936ee;
+		}
+	}
+	&__button {
+		font-family: inherit;
+		font-weight: 400;
+		font-size: 15.5px;
+		color: inherit;
+		display: inline-block;
+		width: 143px;
+		border-radius: 0px 5.5px 5.5px 0px;
+	}
+}
+
+@media (max-width: 991px) {
+	.subscribe {
+		&__row {
+			padding: 0 0 0 2px;
+		}
+		&__image {
+			width: 70%;
+		}
+		&__body {
+			padding: 31px 0 0 20px;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 33px;
+			margin-bottom: 17px;
+		}
+		&__text {
+			line-height: 23px;
+			font-size: 13.2px;
+			margin-bottom: 35px;
+		}
+		&__form {
+			width: 100%;
+			gap: 5px;
+		}
+		&__input {
+			width: 70%;
+		}
+		&__button {
+			width: 30%;
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.subscribe {
+		&__row {
+			flex-direction: column-reverse;
+			margin-bottom: 108px;
+		}
+		&__image {
+			height: 380px;
+			width: 100%;
+		}
+		&__body {
+			padding: 0;
+		}
+		&__input {
+			width: 66%;
+			padding: 8px 11px;
+			&::placeholder {
+				font-size: 10.5px;
+				line-height: 10px;
+			}
+		}
+		&__button {
+			width: 34%;
+			font-size: 10px;
+		}
+		&__form {
+			width: 87%;
+			margin-bottom: 108px;
+		}
+	}
+}

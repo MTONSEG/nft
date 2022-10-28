@@ -1,0 +1,173 @@
+.people {
+	margin-bottom: 160px;
+	& .nft-info {
+		padding: 0;
+	}
+	& .item-slide__image {
+		height: 205px;
+	}
+	&__title {
+		justify-content: space-between;
+		margin-bottom: 47px;
+		padding: 0 0 0 6px;
+	}
+	&__view {
+		img {
+			margin: 3px 13px 0 9px;
+		}
+		&:hover {
+			color: rgba(255, 255, 255, 0.5);
+		}
+	}
+	&__slider {
+		max-width: 1382px;
+	}
+}
+
+
+.body-people {
+	padding: 0 39px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__avatar {
+		width: 162px;
+		height: 162px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: -102px 0 11px;
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__name {
+		font-weight: 500;
+		font-size: 24.3px;
+		line-height: 28px;
+		margin-bottom: 7px;
+	}
+
+	&__nickname {
+		font-weight: 400;
+		font-size: 20.2px;
+		color: #FFB1EE;
+		line-height: 25px;
+		position: relative;
+		margin-bottom: 27px;
+		img{
+			position: absolute;
+			right: -22px;
+			top: 2px;
+		}
+	}
+	&__list {
+		width: 100%;
+		justify-content: space-between;
+		gap: 5px;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 38px;
+		& span:first-child{
+			font-weight: 600;
+			font-size: 31.7px;
+			line-height: 43px;
+		}
+		& span:last-child{
+			font-weight: 500;
+			font-size: 19.8px;
+			color: rgb(255, 255, 255, 0.7);
+		}
+	}
+	&__button {
+		width: 66.4%;
+		text-align: center;
+		font-weight: 600;
+		font-size: 19.9px;
+		line-height: 25px;
+		border-radius: 0;
+		padding: 12px 0;
+	}
+}
+
+@media (max-width: 1120px) {
+	.body-people {
+		padding: 0 26px 28px;
+	}
+}
+
+@media (max-width: 991px) {
+	.people {
+		margin-bottom: 106px;
+		& .container {
+			padding-right: 0;
+		}
+		& .item-slide__image {
+			height: 142px;
+		}
+		&__title {
+			padding: 0;
+			margin-bottom: 24px;
+		}
+		&__title-text {
+			font-size: 18px;
+		}
+		&__view {
+			display: none;
+		}
+	}
+	.body-people {
+		&__avatar {
+			width: 112px;
+			height: 112px;
+			margin: -72px 0 8px;
+		}
+		&__name {
+			font-size: 16.8px;
+			line-height: 20px;
+			margin-bottom: 3px;
+		}
+		&__nickname {
+			line-height: 20px;
+			font-size: 14px;
+			margin-bottom: 20px;
+			img {
+				width: 13px;
+				margin: 0 6px 0 0px;
+			}
+		}
+		&__list {
+			padding: 0 3px;
+		}
+		&__item {
+			margin-bottom: 28px;
+			& span:first-child{
+				font-size: 22px;
+				line-height: 25px;
+			}
+			& span:last-child{
+				font-weight: 500;
+				font-size: 13.7px;
+				color: rgb(255, 255, 255, 0.7);
+			}
+		}
+		&__button {
+			padding: 4px 0;
+			width: 67%;
+		}
+	}
+}
+
+
+@media (max-width: 374px) {
+	.people {
+		& .container {
+			padding-right: 25px;
+		}
+	}
+}

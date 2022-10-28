@@ -1,0 +1,191 @@
+.sallers{
+	margin-bottom: 160px;
+	&__title {
+		font-size: 26.5px;
+		text-align: center;
+		margin-bottom: 23px;
+		span {
+			color: rgba(255, 86, 246, 1);
+			transition: .2s;
+			cursor: pointer;
+			img {
+				margin-top: 15px;
+			}
+			&:hover {
+				color: rgba(255, 86, 246, .6);
+			}
+		}
+	}
+	&__text {
+		font-family: 'Roboto';
+		margin: 0 auto 61px;
+		max-width: 506px;
+		text-align: center;
+		line-height: 25px;
+		font-size: 17.7px;
+	}
+	&__list {
+		margin-bottom: 61px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, 437px);
+		gap: 34px 39px;
+	}
+	&__button {
+		display: block;
+		width: 234px;
+		text-align: center;
+		margin: 0 auto;
+		border-radius: 0;
+		font-size: 19.9px;
+	}
+	&__explore {
+		display: none;
+	}
+}
+
+.item-sallers {
+	font-family: 'Roboto';
+	padding: 24.8px 20px 23.9px 55px;
+	background: linear-gradient(#1F0F42, #1F0F42) padding-box,
+	linear-gradient(145deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)) border-box;
+	border: 2.7px solid transparent;
+	border-radius: 28.6px;
+	font-size: 19px;
+	font-weight: 500;
+	align-items: center;
+	cursor: pointer;
+	transition: .2s;
+	position: relative;
+	&:hover {
+		box-shadow: 0 0 4px #fff;
+	}
+	&__num {
+		color: rgba(255, 255, 255, 0.8);
+		margin-right: 17.2px;
+		position: absolute;
+		top: 50%;
+		left: 21px;
+		transform: translate(0, -50%);
+	}
+	&__avatar {
+		width: 69.8px;
+		height:  69.8px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 13px;
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__name {
+		margin: -16px 0 11px 0;
+	}
+	&__price {
+		font-size: 13.7px;
+	}
+	&__index {
+		padding: 7px 17px;
+		margin: 6px 0 0 auto;
+		font-size: 14.7px;
+		background: 
+			linear-gradient(#1A2843, #1A2843) padding-box, linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
+		border: 1.13px solid transparent;
+		border-radius: 17.5px;
+		color: #00FF66;
+		&._red{
+			background: 
+			linear-gradient(#2D0F3F, #2D0F3F) padding-box, linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%) border-box;
+			color: #FF0000;
+		}
+	}
+}
+
+@media (max-width: 1410px) {
+	.sallers{
+		&__list {
+			justify-content: center;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.sallers {
+		margin-bottom: 97px;
+		&__button {
+			display: none;
+		}
+		&__list {
+			margin-bottom: 0;
+		}
+		& .top-nft__explore {
+			transform: translate(0, -10px);
+		}
+	}
+	.item-sallers {
+		&:nth-child(5),
+		&:nth-child(6),
+		&:nth-child(7),
+		&:nth-child(8),
+		&:nth-child(9),
+		&:nth-child(10),
+		&:nth-child(11),
+		&:nth-child(12) {
+			display: none;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.sallers{
+		&__list {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.sallers{
+		&__title {
+			font-size: 19.2px;
+			margin-bottom: 14px;
+		}
+		&__text {
+			line-height: 140.19%;
+			font-size: 14px;
+			margin-bottom: 24px;
+		}
+		&__list {
+			row-gap: 20px;
+			padding: 0 3px;
+		}
+	}
+
+	.item-sallers {
+		padding: 20px 14px 20px 40px;
+		&__num {
+			font-size: 13.8px;
+		}
+		&__avatar{
+			width: 50px;
+			height: 50px;
+			margin-right: 9px;
+		}
+		&__text {
+			margin: 12px 0 0 0;
+		}
+		&__name {
+			font-size: 13.8px;
+		}
+		&__price {
+			font-size: 10px;
+			img{
+				height: 10px;
+			}
+		}
+		&__index {
+			margin: 10px 0 0 auto;
+			font-size: 10px;
+		}
+	}
+}

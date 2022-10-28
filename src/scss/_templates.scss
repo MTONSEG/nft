@@ -1,0 +1,330 @@
+.container {
+	max-width: 1424px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.title {
+	font-family: 'Orbitron';
+	font-weight: 700;
+	font-size: 26.5px;
+	line-height: 33px;
+}
+
+.logo {
+	position: relative;
+	margin: 0 228px 0 15px;
+	font-family: 'Orbitron';
+	font-weight: 700;
+	font-size: 19.9px;
+	line-height: 25px;
+	&__image{
+		position: absolute;
+		left: -17px;
+		top: -2px;
+		height: 25.5px;
+	}
+	span {
+		color: #fff;
+	}
+}
+
+.explore-btn__body,
+.place-btn__body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.explore-btn:hover,
+.place-btn:hover {
+	opacity: .85;
+}
+
+.explore-btn {
+	font-family: 'Orbitron';
+	margin-right: 37.6px;
+	text-align: center;
+	padding: 2px;
+	border-radius: 2.2px;
+	width: 251px;
+	background: linear-gradient(-272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+	clip-path: polygon(17% 0,100% 0,100% 74%,86% 100%,0 100%,0 31%);
+	&__body {
+		gap: 10px;
+		border-radius: 2.2px;
+		width: 100%;
+		background: linear-gradient(-92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+		padding: 19px 32px 18px 67px;
+		clip-path: polygon(17% 0,100% 0,100% 74%,86% 100%,0 100%,0 31%);
+	}
+}
+
+.place-btn {
+	padding: 9px 8px 8px;
+	font-weight: 600;
+	font-size: 17.7px;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	background: 
+		linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%) padding-box, 
+		linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%) border-box;
+	img {
+		margin-bottom: 3px;
+	}
+}
+
+.nft-info {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+	border-image: linear-gradient(145deg, #A19AB0,#472A63) 1;
+	backdrop-filter: blur(39.6002px);
+	border: 2.88px solid transparent;
+	padding: 42px 21px 25px 29px;
+	justify-content: space-between;
+	gap: 10px;
+	&__title {
+		font-weight: 700;
+		font-size: 23px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+	&__user{
+		align-items: center;
+		gap: 3.3px;
+		margin-bottom: 22px;
+		&-img{
+			width: 37.5px;
+			height: 37.5px;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+		&-name{
+			font-weight: 600;
+			font-size: 20px;
+		}
+	}
+	&__subtitle{
+		font-weight: 600;
+		font-size: 15px;
+		opacity: .7;
+		margin-bottom: 12px;
+	}
+	&__price{
+		align-items: center;
+		color: rgb(255, 255, 255, 0.7);
+		&-icon {
+			margin-left: -6px;
+		}
+		&-text{
+			font-size: 15px;
+			margin-top: 2px;
+			span {
+				font-family: 'Orbitron';
+				font-size: 13px;
+				margin-right: 2px;
+			}
+		}
+	}
+	&__time-title{
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 28px;
+		margin: 0 0 5px 6px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+	&__timer{
+		display: flex;
+		justify-content: space-between;
+		gap: 28px;
+		margin-bottom: 36px;
+		padding: 0 10px 0 0;
+	}
+
+	&__timer-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		span:first-child {
+			font-weight: 600;
+			font-size: 23px;
+			margin-bottom: -8px;
+		}
+		span:last-child {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 25px;
+		}
+	}
+	&__button{
+		display: block;
+		font-size: 24px;
+	}
+}
+
+.item-slide {
+	align-items: center;
+	max-width: 437px;
+	min-width: 300px;
+	&__image {
+		height: 385px;
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+@media (max-width: 1320px) {
+	.nft-info {
+			padding: 24px 17px 18px;
+			gap: 10px;
+		
+		&__time-title{
+			font-size: 12px;
+		}
+		&__timer{
+			gap: 20px;
+		}
+		&__button {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	.nft-info {
+		&__title {
+			font-size: 18px;
+			line-height: 20px;
+			margin-bottom: 8px;
+		}
+		&__user{
+			&-img{
+				width: 26px;
+				height: 26px;
+			}
+			&-name{
+				font-size: 13px;
+			}
+		}
+		&__subtitle{
+			font-size: 12px;
+		}
+		&__button {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.title {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.explore-btn {
+		font-size: 12px;
+		width: 133px;
+		margin-right: 20px;
+		&__body {
+			padding: 10px 25px 10px 28px;
+		}
+		img {
+			width: 25px;
+		}
+	}
+
+	.nft-info {
+		&__right {
+			width: 111px;
+		}
+		&__title {
+			font-size: 13.5px;
+		}
+		&__user{
+			gap: 4px;
+			margin-bottom: 20px;
+			&-name{
+				font-size: 12px;
+			}
+		}
+		&__verif {
+			width: 13px;
+			margin: 0 0 0 7px;
+		}
+		&__subtitle{
+			font-size: 9px;
+			margin-bottom: 5px;
+		}
+		&__price{
+			&-icon {
+				width: 18px;
+				margin-left: -4px;
+			}
+			&-text{
+				font-size: 10px;
+				span {
+					font-size: 8px;
+					margin-right: 3px;
+				}
+			}
+		}
+		&__time-title{
+			margin: 0 0 8px 11px;
+			line-height: 15px;
+			font-size: 8.5px;
+		}
+		&__timer{
+			gap: 16px;
+			padding: 0 10px 0px 4px;
+			margin-bottom: 22px;
+		}
+
+		&__timer-item {
+			span:first-child {
+				font-size: 13px;
+			}
+			span:last-child {
+				font-size: 9px;
+			}
+		}
+		&__button {
+			font-size: 13px;
+		}
+	}
+
+	.item-slide {
+		&__image {
+			height: 267px;
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.container {
+		padding: 0 25px;
+	}
+	.logo {
+		font-size: 16px;
+		&__image {
+			width: 13px;
+			top: -2px;
+			left: -16px;
+		}
+	}
+	.nft-info {
+		padding: 28px 17px 18px 19px;
+	}
+}
+
+@media (max-width: 374px) {
+	.container {
+		padding: 0 25px;
+	}
+}
