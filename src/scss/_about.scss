@@ -10,10 +10,10 @@
 	justify-content: end;
 	&__body {
 		font-family: 'Inter';
-		background: linear-gradient(113.62deg, rgb(97, 97, 97) 0%, rgba(255, 255, 255, 0) 96.25%);
-		backdrop-filter: blur(72.8013px);
+		background: linear-gradient(143.62deg, rgb(97, 97, 97, 0.7) 0%, rgba(255, 255, 255, 0) 96.25%);
+		backdrop-filter: blur(50px);
 		border: 2.88px solid;
-		border-image: linear-gradient(rgb(97, 97, 97, 0.4) 0%, rgba(255, 255, 255, 0) 2%) 1;
+		border-image: linear-gradient(145deg, #8774b1,#472A63) 1;
 		max-width: 577px;
 		padding: 55px 62px 40px 75px;
 		margin: 0px 8.8% -138px 0;
