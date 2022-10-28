@@ -6,6 +6,7 @@ import Swiper, { FreeMode } from 'swiper';
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
 	spaceBetween: 20,
+	// autoHeight: true,
 	breakpoints: {
 		374: {
 			slidesPerView: 1.13,
