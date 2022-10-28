@@ -80,9 +80,9 @@
 
 .nft-info {
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
-	border-image: linear-gradient(145deg, #A19AB0,#472A63) 1;
 	backdrop-filter: blur(39.6002px);
-	border: 2.88px solid transparent;
+	border: 2.88px solid;
+	border-image: linear-gradient(145deg, #8774b1,#472A63) 1;
 	padding: 42px 21px 25px 29px;
 	justify-content: space-between;
 	gap: 10px;
