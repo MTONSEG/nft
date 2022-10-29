@@ -5,6 +5,7 @@
 		padding: 0 0 0 9px;
 	}
 	&__image {
+		background: url('../img/subscribe_image.jpg') center/cover no-repeat;
 		width: 50.3%;
 		border-radius: 5px;
 		overflow: hidden;
@@ -57,6 +58,7 @@
 		display: inline-block;
 		width: 146px;
 		border-radius: 0px 5.5px 5.5px 0px;
+		padding: 0 3px 3px 0;
 	}
 }
 
@@ -78,7 +80,7 @@
 		}
 		&__text {
 			line-height: 23px;
-			font-size: 13.2px;
+			font-size: 13.29px;
 			margin-bottom: 35px;
 		}
 		&__form {
@@ -100,8 +102,16 @@
 		&__row {
 			flex-direction: column-reverse;
 			margin-bottom: 108px;
+			padding: 0;
+		}
+		&__title {
+			padding: 0 0 0 2px;
+		}
+		&__text {
+			padding: 0 0 0 2px;
 		}
 		&__image {
+			background: url('../img/subscribe_image-mob.jpg') center/cover no-repeat;
 			height: 380px;
 			width: 100%;
 		}
@@ -110,19 +120,23 @@
 		}
 		&__input {
 			width: 66%;
-			padding: 8px 11px;
+			padding: 6px 11px 10px 11px;
+			border-radius: 1.5px 0 0 1.5px;
 			&::placeholder {
-				font-size: 10.5px;
+				font-size: 10.3px;
 				line-height: 10px;
 			}
 		}
 		&__button {
-			width: 34%;
+			width: 35%;
 			font-size: 10px;
+			border-radius: 0 2.5px 2.5px 0;
+			font-size: 10.5px;
 		}
 		&__form {
+			padding: 0 0 0 2px;
 			width: 87%;
-			margin-bottom: 108px;
+			margin-bottom: 110px;
 		}
 	}
-}
+}         

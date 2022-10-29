@@ -1,5 +1,5 @@
 .top-nft {
-	margin-bottom: 208px;
+	margin-bottom: 212px;
 	&__slider {
 		max-width: 1382px;
 	}
@@ -25,7 +25,8 @@
 			font-size: 12px;
 			background: #372158;
 			img {
-				margin: 0 7px 0 0px;
+				width: 28px;
+				margin: 0px 7px 0 -2px;
 			}
 		}
 	}
@@ -49,7 +50,8 @@
 		&__explore {
 			display: flex;
 			transform: translate(-12px, 0);
-			margin: 34px auto 0;
+			margin: 38px auto 0;
+			width: 137px;
 		}
 	}
 }

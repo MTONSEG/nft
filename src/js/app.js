@@ -5,21 +5,22 @@ import Swiper, { FreeMode } from 'swiper';
 
 const swiper = new Swiper('.swiper', {
 	slidesPerView: 1,
-	spaceBetween: 20,
-	// autoHeight: true,
+	spaceBetween: 22,
 	breakpoints: {
 		374: {
 			slidesPerView: 1.13,
+			spaceBetween: 22
 		},
 		576: {
 			slidesPerView: 1.8,
+			spaceBetween: 22
 		},
 		768: {
 			slidesPerView: 2.15
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 35.3,
+			spaceBetween: 36,
 		}
 
 	}

@@ -1,9 +1,9 @@
 .sallers{
-	margin-bottom: 161px;
+	margin-bottom: 159px;
 	&__title {
 		font-size: 26.5px;
 		text-align: center;
-		margin-bottom: 23px;
+		margin: 0 0 23px 28px;
 		span {
 			color: rgba(255, 86, 246, 1);
 			transition: .2s;
@@ -19,7 +19,8 @@
 	&__text {
 		font-family: 'Roboto';
 		margin: 0 auto 56px;
-		max-width: 506px;
+		max-width: 511px;
+		padding: 0 0 0 15px;
 		text-align: center;
 		line-height: 25px;
 		font-size: 17.7px;
@@ -28,7 +29,7 @@
 		margin-bottom: 61px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 437px);
-		gap: 34px 35px;
+		gap: 34.5px 35px;
 		padding: 0 6px;
 	}
 	&__button {
@@ -47,7 +48,6 @@
 
 .item-sallers {
 	font-family: 'Roboto';
-	padding: 24.8px 20px 23.9px 55px;
 	background: linear-gradient(#1F0F42, #1F0F42) padding-box,
 	linear-gradient(145deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0)) border-box;
 	border: 2.7px solid transparent;
@@ -58,6 +58,7 @@
 	cursor: pointer;
 	transition: .2s;
 	position: relative;
+	padding: 26.8px 20px 21.9px 54px;
 	&:hover {
 		box-shadow: 0 0 4px #fff;
 	}
@@ -74,7 +75,7 @@
 		height:  69.8px;
 		border-radius: 50%;
 		overflow: hidden;
-		margin-right: 12px;
+		margin-right: 13px;
 		img{
 			object-fit: cover;
 			width: 100%;
@@ -83,7 +84,7 @@
 	}
 
 	&__name {
-		margin: -1px 0 14px;
+		margin: -7px 0 15px;
 	}
 	&__price {
 		font-size: 13.7px;
@@ -114,7 +115,7 @@
 }
 @media (max-width: 991px) {
 	.sallers {
-		margin-bottom: 106px;
+		margin-bottom: 102px;
 		&__button {
 			display: none;
 		}
@@ -122,7 +123,7 @@
 			margin-bottom: 0;
 		}
 		& .top-nft__explore {
-			transform: translate(0,-1px);
+			transform: translate(0,-4px);
 		}
 	}
 	.item-sallers {
@@ -150,12 +151,17 @@
 	.sallers{
 		&__title {
 			font-size: 19.2px;
-			margin-bottom: 13px;
+			margin: 0 0 13px 5px;
+			span img {
+				width: 10px;
+				margin: 15px 0px 0px -1px;
+			}
 		}
 		&__text {
 			line-height: 140.19%;
 			font-size: 14px;
 			margin-bottom: 26px;
+			padding: 0 3px 0 0px;
 		}
 		&__list {
 			row-gap: 24px;

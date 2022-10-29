@@ -59,7 +59,7 @@
 		border-radius: 2.2px;
 		width: 100%;
 		background: linear-gradient(-92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
-		padding: 19px 32px 18px 67px;
+		padding: 21px 32px 18px 67px;
 		clip-path: polygon(17% 0,100% 0,100% 74%,86% 100%,0 100%,0 31%);
 	}
 }
@@ -83,7 +83,7 @@
 	backdrop-filter: blur(39.6002px);
 	border: 2.88px solid;
 	border-image: linear-gradient(145deg, #8774b1,#472A63) 1;
-	padding: 42px 21px 25px 29px;
+	padding: 44px 21px 19px 29px;
 	justify-content: space-between;
 	gap: 10px;
 	&__title {
@@ -120,7 +120,7 @@
 			margin-left: -6px;
 		}
 		&-text{
-			font-size: 15px;
+			font-size: 14.7px;
 			margin-top: 2px;
 			span {
 				font-family: 'Orbitron';
@@ -162,7 +162,11 @@
 	&__button{
 		display: block;
 		font-size: 23.5px;
-		padding: 9px 13px 8px 10px;
+		padding: 10px 13px 9px 10px;
+		img {
+			margin: -4px -2px 0 0;
+			width: 31px;
+		}
 	}
 }
 
@@ -277,14 +281,14 @@
 			}
 		}
 		&__time-title{
-			margin: 0 0 8px 11px;
+			margin: 2px 0 6px 9px;
 			line-height: 15px;
 			font-size: 8.5px;
 		}
 		&__timer{
 			gap: 16px;
 			padding: 0 10px 0px 4px;
-			margin-bottom: 22px;
+			margin-bottom: 19px;
 		}
 
 		&__timer-item {
@@ -297,6 +301,10 @@
 		}
 		&__button {
 			font-size: 13px;
+			img {
+				margin: 0px -7px 0 0;
+				width: 24px;
+			}
 		}
 	}
 
@@ -320,7 +328,7 @@
 		}
 	}
 	.nft-info {
-		padding: 28px 17px 18px 19px;
+		padding: 26px 17px 14px 19px;
 	}
 }
 

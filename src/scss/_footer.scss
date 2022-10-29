@@ -7,7 +7,7 @@
 }
 
 .top-footer {
-	padding: 102px 0 67px;
+	padding: 102px 0 69px;
 	border-top: 1px solid rgb(255, 255, 255, 0.2);
 	border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 	&__contacts {
@@ -17,15 +17,15 @@
 	}
 	&__logo {
 		margin-bottom: 30px;
-		margin: 0 0 30px 20px;
+		margin: 0 0 31px 20px;
 		img{
 			left: -21px;
 		}
 	}
 	&__text {
-		line-height: 27px;
-		font-size: 15.6px;
-		margin-bottom: 26.5px;
+		line-height: 26px;
+		font-size: 15.7px;
+		margin-bottom: 27.5px;
 	}
 	&__soc {
 		display: flex;
@@ -107,7 +107,7 @@
 	padding: 31px 0 39px;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 15.5px;
+	font-size: 15.56px;
 	line-height: 20px;
 	&__item {
 		border-right: 1px solid #D9DBE1;
@@ -123,11 +123,14 @@
 			text-shadow: 0 0 3px #fff;
 		}
 	}
+	&__copy {
+		margin: 0 0px 0 -3px;
+	}
 }
 
 @media (max-width: 991px) {
 	.top-footer {
-		padding: 30px 0 31px;
+		padding: 30px 0 27px;
 		&__contacts {
 			max-width: 40%;
 			margin-right: 10%;
@@ -154,7 +157,7 @@
 			width: 100%;
 			margin-bottom: 0;
 			font-size: 20.7px;
-			padding: 21px 0 22px;
+			padding: 21px 0 23px;
 			img {
 				display: inline-block;
 				position: absolute;
@@ -183,7 +186,7 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
-		gap: 42px;
+		gap: 45px;
 	}
 	.bottom-footer {
 		&__list {
