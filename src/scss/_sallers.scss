@@ -1,5 +1,5 @@
 .sallers{
-	margin-bottom: 160px;
+	margin-bottom: 161px;
 	&__title {
 		font-size: 26.5px;
 		text-align: center;
@@ -18,7 +18,7 @@
 	}
 	&__text {
 		font-family: 'Roboto';
-		margin: 0 auto 61px;
+		margin: 0 auto 56px;
 		max-width: 506px;
 		text-align: center;
 		line-height: 25px;
@@ -28,7 +28,8 @@
 		margin-bottom: 61px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 437px);
-		gap: 34px 39px;
+		gap: 34px 35px;
+		padding: 0 6px;
 	}
 	&__button {
 		display: block;
@@ -37,6 +38,7 @@
 		margin: 0 auto;
 		border-radius: 0;
 		font-size: 19.9px;
+		padding: 13px 8px 11px;
 	}
 	&__explore {
 		display: none;
@@ -64,7 +66,7 @@
 		margin-right: 17.2px;
 		position: absolute;
 		top: 50%;
-		left: 21px;
+		left: 27px;
 		transform: translate(0, -50%);
 	}
 	&__avatar {
@@ -72,7 +74,7 @@
 		height:  69.8px;
 		border-radius: 50%;
 		overflow: hidden;
-		margin-right: 13px;
+		margin-right: 12px;
 		img{
 			object-fit: cover;
 			width: 100%;
@@ -81,14 +83,14 @@
 	}
 
 	&__name {
-		margin: -16px 0 11px 0;
+		margin: -1px 0 14px;
 	}
 	&__price {
 		font-size: 13.7px;
 	}
 	&__index {
 		padding: 7px 17px;
-		margin: 6px 0 0 auto;
+		margin: 18px -2px 0 auto;
 		font-size: 14.7px;
 		background: 
 			linear-gradient(#1A2843, #1A2843) padding-box, linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
@@ -112,7 +114,7 @@
 }
 @media (max-width: 991px) {
 	.sallers {
-		margin-bottom: 97px;
+		margin-bottom: 106px;
 		&__button {
 			display: none;
 		}
@@ -120,7 +122,7 @@
 			margin-bottom: 0;
 		}
 		& .top-nft__explore {
-			transform: translate(0, -10px);
+			transform: translate(0,-1px);
 		}
 	}
 	.item-sallers {
@@ -148,23 +150,25 @@
 	.sallers{
 		&__title {
 			font-size: 19.2px;
-			margin-bottom: 14px;
+			margin-bottom: 13px;
 		}
 		&__text {
 			line-height: 140.19%;
 			font-size: 14px;
-			margin-bottom: 24px;
+			margin-bottom: 26px;
 		}
 		&__list {
-			row-gap: 20px;
+			row-gap: 24px;
 			padding: 0 3px;
 		}
 	}
 
 	.item-sallers {
-		padding: 20px 14px 20px 40px;
+		padding: 17px 14px 18px 40px;
+		border-radius: 25.6px;
 		&__num {
 			font-size: 13.8px;
+			left: 20px;
 		}
 		&__avatar{
 			width: 50px;
@@ -172,10 +176,11 @@
 			margin-right: 9px;
 		}
 		&__text {
-			margin: 12px 0 0 0;
+			margin: 5px 0 0 0;
 		}
 		&__name {
 			font-size: 13.8px;
+			margin: -5px 0 12px;
 		}
 		&__price {
 			font-size: 10px;
@@ -184,7 +189,8 @@
 			}
 		}
 		&__index {
-			margin: 10px 0 0 auto;
+			margin: 12px 0px 0 auto;
+			padding: 7px 13px;
 			font-size: 10px;
 		}
 	}

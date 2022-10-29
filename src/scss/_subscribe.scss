@@ -1,11 +1,11 @@
 .subscribe {
 	&__row {
-		margin-bottom: 166px;
+		margin-bottom: 161px;
 		font-family: 'Inter';
 		padding: 0 0 0 9px;
 	}
 	&__image {
-		width: 50.1%;
+		width: 50.3%;
 		border-radius: 5px;
 		overflow: hidden;
 		img {
@@ -16,24 +16,25 @@
 	}
 
 	&__body {
-		padding: 31px 81px 0;
+		padding: 31px 78px 5px;
 	}
 	&__title {
 		font-family: 'Orbitron';
-		font-size: 39.8px;
+		font-size: 39.7px;
 		font-weight: 700;
 		line-height: 50px;
 		margin-bottom: 27px;
+		font-feature-settings: 'salt' on, 'liga' off;
 	}
 	&__text {
 		max-width: 500px;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 20.11px;
 		line-height: 35px;
 		margin-bottom: 52px;
 	}
 	&__form {
-		gap: 9px;
+		gap: 7px;
 	}
 	&__input {
 		display: inline-block;
@@ -41,7 +42,7 @@
 		padding: 19px 17px;
 		border-radius: 5.5px 0px 0px 5.5px;
 		&::placeholder {
-			font-size: 15px;
+			font-size: 15.62px;
 			color: #474A57;
 		}
 		&:focus {
@@ -54,7 +55,7 @@
 		font-size: 15.5px;
 		color: inherit;
 		display: inline-block;
-		width: 143px;
+		width: 146px;
 		border-radius: 0px 5.5px 5.5px 0px;
 	}
 }

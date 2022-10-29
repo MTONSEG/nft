@@ -12,19 +12,19 @@
 	border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 	&__contacts {
 		flex-shrink: 0;
-		max-width: 279px;
-		margin-right: 6.6%;
+		max-width: 280px;
+		margin-right: 6.4%;
 	}
 	&__logo {
 		margin-bottom: 30px;
 		margin: 0 0 30px 20px;
 		img{
-			
+			left: -21px;
 		}
 	}
 	&__text {
 		line-height: 27px;
-		font-size: 15.5px;
+		font-size: 15.6px;
 		margin-bottom: 26.5px;
 	}
 	&__soc {
@@ -66,6 +66,7 @@
 	width: 100%;
 	grid-template-columns: repeat(5, 1fr);
 	column-gap: 5px;
+	padding: 0 17px 0 0;
 	&__title {
 		text-align: left;
 		background: transparent;
@@ -97,7 +98,7 @@
 			font-family: 'MuseoModerno';
 			color: #2EC5CE;
 			font-size: 22px;
-			margin: 0 0 0 2px;
+			margin: 0 0 0 6px;
 		}
 	}
 }
@@ -153,12 +154,12 @@
 			width: 100%;
 			margin-bottom: 0;
 			font-size: 20.7px;
-			padding: 22px 0 21px;
+			padding: 21px 0 22px;
 			img {
 				display: inline-block;
 				position: absolute;
 				top: 43%;
-				right: 23px;
+				right: 6px;
 				transition: .2s;
 			}
 			&._active {
